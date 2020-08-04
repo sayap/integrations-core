@@ -1,9 +1,9 @@
 import json
+import time
 from contextlib import closing
 
 import datadog_agent
 import pymysql
-import time
 from datadog import statsd
 from datadog_checks.base import is_affirmative
 from datadog_checks.base.utils.db.sql import compute_sql_signature, compute_exec_plan_signature, submit_exec_plan_events
